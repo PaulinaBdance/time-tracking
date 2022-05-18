@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    min-height: 100vh;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+h3 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #bbc0ff;
+}
+.page {  
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(6, 100px);
+    column-gap: 20px;
+    justify-content: center;
+}
+
+
+.autor {
+    width: 255px;
+    height: 304px;
+    background-color: #5747EA;
+    border-radius: 15px;
+    grid-column-start: 1;
+    grid-row: 1/4;
+    display: flex;
+    z-index: 2;
+}
+.jaremyImg {
+    width: 78px;
+    height: 75px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 20px;
+}
+.report {
+    display: inline-block;
+    margin: 120px 32px;
+ }
+.time {
+    width: 255px;
+    height: 380px;
+    background-color: #1c204b;
+    border-radius: 15px;
+    z-index: -1;
+    display: flex;
+    grid-column-start: 1;
+    grid-row: 3/6;
+    
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px;
+}
+
+.exercise-title {
+    background-color: #ff8b64;
+    width: 255px;
+    height: 160px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+.exercise-text {
+    width: 255px;
+    height: 199px;
+    background-color: #1c204b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.icon {
+    width: 80px;
+    height: 50%;
+    margin: -5px 10px 0 0;
+}
+.icon-work {
+    background: url("./images/icon-work.svg") no-repeat;
+}
+.exercise-text__time {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 21px;
+}
+.exercise-text__overall {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #bbc0ff;
+}
+.workItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.padPlay {
+    background-color: #55c2e6;
+    width: 255px;
+    height: 160px;
+    z-index: -2;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}   
+.boxPlay {
+    width: 255px;
+    height: 199px;
+    background-color: #1c204b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.icon-play {
+    background: url("./images/icon-play.svg") no-repeat;
+}
+
+.padStudy {
+    background-color: #ff5e7d;
+    width: 255px;
+    height: 160px;
+    z-index: -1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+.boxStudy {
+    width: 255px;
+    height: 199px;
+    background-color: #1c204b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.icon-study {
+    background: url("./images/icon-study.svg") no-repeat;
+}
+
+.padExercise {
+    background-color: #4bcf82;
+    width: 255px;
+    height: 160px;
+    z-index: -1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 140px;
+    position: relative;
+    overflow: hidden;
+    grid-column-start: 2;
+    grid-row: 5/6;
+    margin-top: 220px;
+}
+.boxExe {
+    width: 255px;
+    height: 199px;
+    background-color: #1c204b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-row: 5/6;
+    margin-top: -240px;
+
+}
+.icon-exe {
+    background: url("./images/icon-exercise.svg") no-repeat;
+}
+
+
+.padSocial {
+    background-color: #7335d2;
+    width: 255px;
+    height: 160px;
+    z-index: -1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 140px;
+    position: relative;
+    overflow: hidden;
+    grid-column-start: 3;
+    grid-row: 4/5;
+    margin-top: 220px;
+}
+.boxSocial {
+    width: 255px;
+    height: 199px;
+    background-color: #1c204b;
+    border-radius: 15px;
+    display: flex;
+    grid-column-start: 3;
+    grid-row: 5/6;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: -240px;
+}
+.icon-social {
+    background: url("./images/icon-social.svg") no-repeat;
+}
+
+
+.padSelf {
+    background-color: #f1c75b;
+    width: 255px;
+    height: 160px;
+    z-index: -1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    padding-right: 20px;
+    grid-column-start: 4;
+    grid-row: 4/5;
+    margin-top: 220px;
+}
+.boxSelf {
+    width: 255px;
+    height: 199px;
+    background-color: #1c204b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    grid-column-start: 4;
+    grid-row: 5/6;
+    z-index: 2;
+    margin-top: -100px;
+}
+.icon-self {
+    background: url("./images/icon-self-care.svg") no-repeat;
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 100px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
